@@ -1,0 +1,77 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(245, 235, 240);
+  display: flex;
+  justify-content: space-between; /* Adjusted from space-around to space-between for better spacing */
+  align-items: center;
+  height: 60px;
+  z-index: 1000;
+}
+
+.left {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  color: rgb(141, 90, 117);
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px; /* Adjusted font size for better mobile experience */
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #fff;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Add padding to the content to prevent it from being hidden behind the fixed navbar */
+body {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    display: none; /* Hide the navigation links when screen size is 768px or smaller */
+  }
+
+  .left {
+    width: 100%; /* Take up the full width when the navigation links are hidden */
+    text-align: center; /* Center the text */
+  }
+
+  h3 {
+    margin: 0; /* Remove margin for better spacing */
+  }
+  
+  a {
+    font-size: 14px; /* Adjusted font size for better mobile experience */
+  }
+  
+  body {
+    padding-top: 40px; /* Reduced padding for better spacing */
+  }
+}
