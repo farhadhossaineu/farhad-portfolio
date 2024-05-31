@@ -24,7 +24,7 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>I am fresher</small>
+              <small>Front-end Developer at ITBee Solution</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
